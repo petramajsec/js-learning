@@ -1,0 +1,19 @@
+{
+  "name": "js-learning",
+  "version": "1.0.0",
+  "description": "in the scope of QA knowledge sharing",
+  "main": "index.js",
+  "scripts": {
+    "start": "node starter/starter/index.js" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petramajsec/js-learning.git"
+  },
+  "author": "Petra Majsec",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/petramajsec/js-learning/issues"
+  },
+  "homepage": "https://github.com/petramajsec/js-learning#readme"
+}
