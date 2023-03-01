@@ -4,11 +4,15 @@
 console.log("Hello");
 
 
-/* var button = document.getElementsByTagName("doSomething");
- console.log(button);*/
 
- function numberGenarator(min, max){
-   // return number = Math.floor(Math.random()*1000);
-   return Math.floor(Math.random() * (max - min) + min);
- }
- console.log(numberGenarator(0,9999));
+document.getElementById('doSomething').addEventListener("click", function() {  //addEventListener() method of the EventTarget interface sets up a function that will be called whenever the specified event is delivered to the target.
+    function numberGenarator(min, max){
+        return Math.floor(Math.random() * (max - min) + min);
+        }
+    
+    console.log(numberGenarator(0,9999)); });
+    
+    
+    
+    
+
