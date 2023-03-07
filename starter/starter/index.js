@@ -24,3 +24,9 @@ var numberGenerator = (min, max) => {
     let randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
         console.log(randomNumber);
 };
+
+
+//3a: napisi funkciju tako da kad se klikne na 'Do Something' button se promjeni background boja ostalih buttona
+//boja moze biti randome ili tocno odredjena - jedini je uvijet da svaki button ima drugu boju 
+
+//3b: kad se hovera preko dodanih buttona - background boja 'nestane'
