@@ -14,7 +14,7 @@ console.log(numberGenarator(0,9999)); });*/
 
 
 // solution #2
-let button = document.getElementById('doSomething');
+/*let button = document.getElementById('doSomething');
     button.onclick = () => { //button.onclick function is a callback function.
         
 numberGenerator(0, 9999);
@@ -23,10 +23,11 @@ numberGenerator(0, 9999);
 var numberGenerator = (min, max) => {
     let randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
         console.log(randomNumber);
-};
+};*/
 
 
 //3a: napisi funkciju tako da kad se klikne na 'Do Something' button se promjeni background boja ostalih buttona
 //boja moze biti randome ili tocno odredjena - jedini je uvijet da svaki button ima drugu boju 
 
 //3b: kad se hovera preko dodanih buttona - background boja 'nestane'
+document.getElementById("firstButt").style.backgroundColor= "red";     //sytax used document.getElementById(id).style.property = new style
