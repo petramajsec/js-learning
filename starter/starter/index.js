@@ -61,5 +61,19 @@ function randColors () {
     
 }
 
-document.getElementById('doSomething').addEventListener("click",randColors);
+function bgBeGone () {
+    var circlesCollection = document.getElementsByClassName("randomColor");  
+    var circles = Array.from(circlesCollection) 
 
+    circles.forEach(circle => {
+        circle.style.backgroundColor= "white";
+    })
+}
+
+
+document.getElementById('doSomething').addEventListener("click", randColors);
+
+// document.querySelectorAll('[class~=randomColor]').addEventListener("dblclick", bgBeGone);
+
+
+document.getElementById("firstButt").addEventListener("mouseover", bgBeGone);  // 1/3 correct
