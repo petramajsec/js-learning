@@ -61,5 +61,5 @@ function randColors () {
     
 }
 
-document.getElementById('doSomething').addEventListener("click", randColors());
+document.getElementById('doSomething').addEventListener("click",randColors);
 
