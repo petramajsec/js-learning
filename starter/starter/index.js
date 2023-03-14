@@ -32,12 +32,37 @@ var numberGenerator = (min, max) => {
 //3b: kad se hovera preko dodanih buttona - background boja 'nestane'
 document.getElementById("firstButt").style.backgroundColor= "red";     //sytax used document.getElementById(id).style.property = new style
 
+
+
 let maxVal = 0xFFFFFF; //  maximum value can be FFFFFF, adding 0x before a hexadec number
 let randomNumber = Math.random() * maxVal;  // returns a floating point random number 
 
 // convert the floating-point number to an integer 
 randomNumber = Math.floor(randomNumber);
 let randColor = randomNumber.toString(16);  // converting of integer into hex 
-console.log(randColor);
 
-document.getElementById("secondButt").style.backgroundColor= "#" + randColor;
+
+
+
+//document.getElementById("secondButt").style.backgroundColor= "#" + randColor;
+
+function randColors () {
+    var circlesCollection = document.getElementsByClassName("randomColor");
+    var circles = Array.from(circlesCollection)
+    console.log(circles);
+
+    circles.forEach(circle => {
+        let randomNumber = Math.random() * maxVal;  // returns a floating point random number 
+
+    // convert the floating-point number to an integer 
+    randomNumber = Math.floor(randomNumber);
+        let randColor = randomNumber.toString(16);  // converting of integer into hex 
+
+        circle.style.backgroundColor= "#" + randColor;
+    });
+    
+   
+}
+
+randColors();
+
