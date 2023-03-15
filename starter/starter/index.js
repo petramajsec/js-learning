@@ -25,22 +25,15 @@ var numberGenerator = (min, max) => {
         console.log(randomNumber);
 };*/
 
-
 //3a: napisi funkciju tako da kad se klikne na 'Do Something' button se promjeni background boja ostalih buttona
 //boja moze biti randome ili tocno odredjena - jedini je uvijet da svaki button ima drugu boju 
 
 //3b: kad se hovera preko dodanih buttona - background boja 'nestane'
 
-
 let maxVal = 0xFFFFFF; //  maximum value can be FFFFFF, adding 0x before a hexadec number
 let randomNumber = Math.random() * maxVal;  // returns a floating point random number 
 
-
-
-
-
-
-
+//document.getElementById("firstButt").style.backgroundColor="red";
 
 //document.getElementById("secondButt").style.backgroundColor= "#" + randColor;
 
@@ -56,3 +49,5 @@ function randColors () {
         circle.style.backgroundColor= "#" + randColor;
     });
 }
+
+document. getElementById('doSomething').addEventListener("click",randColors);
