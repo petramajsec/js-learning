@@ -76,4 +76,6 @@ document.getElementById('doSomething').addEventListener("click", randColors);
 // document.querySelectorAll('[class~=randomColor]').addEventListener("dblclick", bgBeGone);
 
 
-document.getElementById("firstButt").addEventListener("mouseover", bgBeGone);  // 1/3 correct
+//document.getElementById("firstButt").addEventListener("mouseover", bgBeGone);  // 1/3 correct
+
+
