@@ -34,9 +34,9 @@ var numberGenerator = (min, max) => {
 let maxVal = 0xFFFFFF; //  maximum value can be FFFFFF, adding 0x before a hexadec number
 let randomNumber = Math.random() * maxVal;  // returns a floating point random number 
 
-// convert the floating-point number to an integer 
-randomNumber = Math.floor(randomNumber);
-let randColor = randomNumber.toString(16);  // converting of integer into hex 
+
+
+
 
 
 
@@ -44,23 +44,14 @@ let randColor = randomNumber.toString(16);  // converting of integer into hex
 //document.getElementById("secondButt").style.backgroundColor= "#" + randColor;
 
 function randColors () {
-    var circlesCollection = document.getElementsByClassName("randomColor");
-    var circles = Array.from(circlesCollection)
-    console.log(circles);
+    var circlesCollection = document.getElementsByClassName("randomColor");  //it is not actually and array, for loop fialed
+    var circles = Array.from(circlesCollection)  //Array.from() converts an array-like structure to an actual array
 
     document.getElementById("firstButt").style.backgroundColor= "red";     //sytax used document.getElementById(id).style.property = new style
     circles.forEach(circle => {
-        let randomNumber = Math.random() * maxVal;  // returns a floating point random number 
-
-    // convert the floating-point number to an integer 
-    randomNumber = Math.floor(randomNumber);
+        let randomNumber = Math.random() * maxVal;  // convert the floating-point number to an integer / using forEach loop on arrays
+        randomNumber = Math.floor(randomNumber);
         let randColor = randomNumber.toString(16);  // converting of integer into hex 
-
         circle.style.backgroundColor= "#" + randColor;
     });
-}
 
-//activating function with a click
-// document.getElementById('doSomething').addEventListener("click", () => {
-//     randColors();
-// })
