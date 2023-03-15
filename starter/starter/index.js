@@ -30,9 +30,6 @@ var numberGenerator = (min, max) => {
 //boja moze biti randome ili tocno odredjena - jedini je uvijet da svaki button ima drugu boju 
 
 //3b: kad se hovera preko dodanih buttona - background boja 'nestane'
-document.getElementById("firstButt").style.backgroundColor= "red";     //sytax used document.getElementById(id).style.property = new style
-
-
 
 let maxVal = 0xFFFFFF; //  maximum value can be FFFFFF, adding 0x before a hexadec number
 let randomNumber = Math.random() * maxVal;  // returns a floating point random number 
@@ -51,6 +48,7 @@ function randColors () {
     var circles = Array.from(circlesCollection)
     console.log(circles);
 
+    document.getElementById("firstButt").style.backgroundColor= "red";     //sytax used document.getElementById(id).style.property = new style
     circles.forEach(circle => {
         let randomNumber = Math.random() * maxVal;  // returns a floating point random number 
 
@@ -60,9 +58,9 @@ function randColors () {
 
         circle.style.backgroundColor= "#" + randColor;
     });
-    
-   
 }
 
-randColors();
-
+//activating function with a click
+document.getElementById('doSomething').addEventListener("click", () => {
+    randColors();
+})

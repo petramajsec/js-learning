@@ -64,3 +64,15 @@
     border-radius: 45px;
     cursor: pointer;
 }
+
+#firstButt:hover{
+    background-color: #fff !important;
+}
+
+#secondButt:hover{
+    background-color: #fff !important;
+}
+
+#thirdButt:hover{
+    background-color: #fff !important;
+}
