@@ -32,7 +32,7 @@ var numberGenerator = (min, max) => {
 //3b: kad se hovera preko dodanih buttona - background boja 'nestane'
 
 
-document.getElementById("firstButt").style.backgroundColor= "red";     //sytax used document.getElementById(id).style.property = new style
+//document.getElementById("firstButt").style.backgroundColor= "red";     //sytax used document.getElementById(id).style.property = new style
 
 
 
@@ -77,8 +77,4 @@ document.getElementById('doSomething').addEventListener("click", randColors);
 
 
 //document.getElementById("firstButt").addEventListener("mouseover", bgBeGone);  // 1/3 correct
-
-
-
-// 
 
