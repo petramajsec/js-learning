@@ -54,4 +54,4 @@ function randColors () {
         let randColor = randomNumber.toString(16);  // converting of integer into hex 
         circle.style.backgroundColor= "#" + randColor;
     });
-
+}
