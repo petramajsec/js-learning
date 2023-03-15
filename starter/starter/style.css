@@ -37,7 +37,7 @@
 
 #firstButt {
     margin: 100px auto auto 150px;
-    border: 1px solid;
+    border: 10px solid;
     background-color: white;
     height: 100px;
     width: 100px;
@@ -47,7 +47,7 @@
 
 #secondButt {
     margin: 200px 100px auto auto;
-    border: 1px solid;
+    border: 10px solid;
     background-color: white;
     height: 120px;
     width: 120px;
@@ -57,7 +57,7 @@
 
 #thirdButt {
     margin: auto;
-    border: 1px solid;
+    border: 10px solid;
     background-color: white;
     height: 90px;
     width: 90px;
