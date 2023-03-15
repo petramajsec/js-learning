@@ -31,6 +31,7 @@ var numberGenerator = (min, max) => {
 
 //3b: kad se hovera preko dodanih buttona - background boja 'nestane'
 
+
 let maxVal = 0xFFFFFF; //  maximum value can be FFFFFF, adding 0x before a hexadec number
 let randomNumber = Math.random() * maxVal;  // returns a floating point random number 
 
