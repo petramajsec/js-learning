@@ -61,6 +61,6 @@ function randColors () {
 }
 
 //activating function with a click
-document.getElementById('doSomething').addEventListener("click", () => {
-    randColors();
-})
+// document.getElementById('doSomething').addEventListener("click", () => {
+//     randColors();
+// })
