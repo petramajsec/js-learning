@@ -50,4 +50,14 @@ function randColors () {
     });
 }
 
-document. getElementById('doSomething').addEventListener("click",randColors);
+document.getElementById('doSomething').addEventListener("click",randColors);
+
+
+// #3:
+// DO 22.3.: ISPUNI ARRAY arrText sa 10+ izjava/psovki/cinjenica - sto god zelis. + stvoriti svoju granu petra1 u gitu i na njoj raditi sve promjene u kodu
+// Napomena -  proci sto je array, koja je razlika izmedju arraya i objekta u js-u
+var arrText = [
+    {text: "Before you judge a man, walk a mile in his shoes. After that who cares?... He’s a mile away and you’ve got his shoes!"},
+    {}
+]
+document.getElementById('text').innerHTML = arrText[0].text;
