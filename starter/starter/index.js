@@ -58,6 +58,14 @@ document.getElementById('doSomething').addEventListener("click",randColors);
 // Napomena -  proci sto je array, koja je razlika izmedju arraya i objekta u js-u
 var arrText = [
     {text: "Before you judge a man, walk a mile in his shoes. After that who cares?... He’s a mile away and you’ve got his shoes!"},
-    {}
+    {text: "With good program architecture debugging is a breeze, because bugs will be where they should be."},
+    {text: "Never allow the same bug to bite you twice."},
+    {text: "Without requirements or design, programming is the art of adding bugs to an empty text file."},
+    {text: "If you automate a mess, you get an automated mess."},
+    {text: "A computer once beat me at chess, but it was no match for me at kickboxing."},
+    {text: "Engineers call them edge cases. I call them: what our users do."},
+    {text: "Reminds me of the awesome bug report I saw once: ‘Everything is broken. Steps to reproduce: do anything. Expected result: it should work’."},
+    {text: "Testers don’t like to break things; they like to dispel the illusion that things work."},
+    {text: "All code is guilty until proven innocent."},
 ]
 document.getElementById('text').innerHTML = arrText[0].text;
