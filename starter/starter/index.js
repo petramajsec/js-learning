@@ -69,3 +69,17 @@ var arrText = [
     {text: "All code is guilty until proven innocent."},
 ]
 document.getElementById('text').innerHTML = arrText[0].text;
+
+
+//#4 do 29.4. -> radis promjene na svojoj grani petra1, a da bi na nju dodala ove izmjene koje se nalaze na main, nakon sto se prebacis na petra1 odradis 
+//naredbu git merge main (da ti se na petra1 prebace promjene sa main)
+//nakon sto odradis zadatak, ides na git add -A, pa commit, pa push -u origin petra1, pa onda na githubu odradis onaj merge PR-a da sve prebacis i mergas sa main
+//ZADATAK:
+//napisi funckciju 'randomeText' koja ce klikom na button 'Try me punk' promjeniti text 
+//oblik texta treba biti broj texta iz arraya + text quote, npr: 2. Never allow the same bug to bite you twice.
+//ujedno, text koji se prikazuje treba biti nasumican
+
+function randomeText() {
+    
+    
+    }  
