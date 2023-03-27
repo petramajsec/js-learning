@@ -82,4 +82,12 @@ document.getElementById('text').innerHTML = arrText[0].text;
 function randomeText() {
     
     
-    }  
+    const randomIndex = Math.floor(Math.random() * arrText.length)
+    const randomQuote = arrText[randomIndex];
+    
+    const quoteElement = document.getElementById('text');
+    quoteElement.innerHTML  = randomIndex + 1 + '. ' + randomQuote.text; //adding +1 because array indexing starts at 0
+} 
+    
+
+
