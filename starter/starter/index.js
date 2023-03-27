@@ -84,12 +84,9 @@ function randomeText() {
     
     const randomIndex = Math.floor(Math.random() * arrText.length)
     const randomQuote = arrText[randomIndex];
-    const randomQuoteStr = JSON.stringify(randomQuote);
-
+    
     const quoteElement = document.getElementById('text');
-    quoteElement.innerHTML  = randomQuoteStr;
-    
-    
+    quoteElement.innerHTML  = randomIndex + 1 + '. ' + randomQuote.text; //adding +1 because array indexing starts at 0
 } 
     
 
