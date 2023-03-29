@@ -79,15 +79,21 @@ document.getElementById('text').innerHTML = arrText[0].text;
 //oblik texta treba biti broj texta iz arraya + text quote, npr: 2. Never allow the same bug to bite you twice.
 //ujedno, text koji se prikazuje treba biti nasumican
 
+// function randomeText() {
+//     const randomIndex = Math.floor(Math.random() * arrText.length)
+//     const randomQuote = arrText[randomIndex];
+//     const quoteElement = document.getElementById('text');
+//     quoteElement.innerHTML  = randomIndex + 1 + '. ' + randomQuote.text; //adding +1 because array indexing starts at 0
+// }
+    
+// NICE! ;) <3
+
+//#5 -> git dio isto kao i prethodni put
+// -> prilagodi funkciju randomeText tako da prikazuje samo izjave sa (oznacenim) parnim brojevima na frontu, a u console logu tekst sa neparnim brojevima
+
 function randomeText() {
-    
-    
     const randomIndex = Math.floor(Math.random() * arrText.length)
     const randomQuote = arrText[randomIndex];
-    
     const quoteElement = document.getElementById('text');
     quoteElement.innerHTML  = randomIndex + 1 + '. ' + randomQuote.text; //adding +1 because array indexing starts at 0
-} 
-    
-
-
+}
