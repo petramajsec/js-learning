@@ -91,9 +91,29 @@ document.getElementById('text').innerHTML = arrText[0].text;
 //#5 -> git dio isto kao i prethodni put
 // -> prilagodi funkciju randomeText tako da prikazuje samo izjave sa (oznacenim) parnim brojevima na frontu, a u console logu tekst sa neparnim brojevima
 
+// solution using if...else statement 
 function randomeText() {
     const randomIndex = Math.floor(Math.random() * arrText.length)
     const randomQuote = arrText[randomIndex];
     const quoteElement = document.getElementById('text');
-    quoteElement.innerHTML  = randomIndex + 1 + '. ' + randomQuote.text; //adding +1 because array indexing starts at 0
+    if (randomIndex % 2 === 0) {
+        quoteElement.innerHTML = randomIndex  + '. ' + randomQuote.text;
+    } else {
+        console.log(randomIndex  + '. ' + randomQuote.text);
+    }
 }
+
+// solution using switch statement 
+/*function randomeText() {
+    const randomIndex = Math.floor(Math.random() * arrText.length)
+    const randomQuote = arrText[randomIndex];
+    const quoteElement = document.getElementById('text');
+    switch (randomIndex % 2) {
+        case 0:
+            quoteElement.innerHTML = randomIndex  + '. ' + randomQuote.text;
+            break;
+        case 1:
+            console.log(randomIndex  + '. ' + randomQuote.text);
+            break;
+    }
+}  */
