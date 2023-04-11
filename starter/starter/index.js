@@ -50,7 +50,7 @@ function randColors () {
     });
 }
 
-document.getElementById('doSomething').addEventListener("click",randColors);
+//document.getElementById('doSomething').addEventListener("click",randColors);
 
 
 // #3:
@@ -96,11 +96,8 @@ function randomeText() {
     const randomIndex = Math.floor(Math.random() * arrText.length)
     const randomQuote = arrText[randomIndex];
     const quoteElement = document.getElementById('text');
-    if (randomIndex % 2 === 0) {
-        quoteElement.innerHTML = randomIndex  + '. ' + randomQuote.text;
-    } else {
-        console.log(randomIndex  + '. ' + randomQuote.text);
-    }
+    quoteElement.innerHTML = randomQuote.text;
+    randColors();
 }
 
 // solution using switch statement 
@@ -117,3 +114,19 @@ function randomeText() {
             break;
     }
 }  */
+
+//#6 -> do 3.5. (ako stignes prije-to bolje! ;) )
+// -> trebas napraviti da kad se klikne add ili 'enter'  da se isprazni input field tako da se ne moze vise puta isti input dodati
+// -> git uvijek isto ;) 
+
+function newElement(){
+    var li = document.createElement("li");
+    var inputValue = document.getElementById("input").value;
+    var text = document.createTextNode(inputValue);
+    li.appendChild(text);
+      if(inputValue===''){
+        alert("Sometimes the smartest thing to do is to do nothing. Still, you have to write something.");
+      } else {
+        document.getElementById("tasks").appendChild(li);
+      }
+    }
