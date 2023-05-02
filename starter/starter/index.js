@@ -128,5 +128,6 @@ function newElement(){
         alert("Sometimes the smartest thing to do is to do nothing. Still, you have to write something.");
       } else {
         document.getElementById("tasks").appendChild(li);
+        document.getElementById("input").value = '';  //input field will be cleared after add span is clicked, or the enter key is pressed
       }
     }
